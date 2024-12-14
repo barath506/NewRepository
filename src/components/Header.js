@@ -4,7 +4,7 @@ import Logo from "../assets/logo.svg"
 export const Header = () => {
     const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")) || "medium");
   
-    
+    console.log("test");
     useEffect(() => {
         document.documentElement.removeAttribute("class");
         document.documentElement.classList.add(theme);
